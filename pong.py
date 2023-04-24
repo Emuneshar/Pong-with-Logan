@@ -74,6 +74,9 @@ def paddleBDown():
 # Keyboard bindings
 window.listen()
 window.onkeypress(paddleAUp, "w")
+window.onkeypress(paddleADown, "s")
+window.onkeypress(paddleBUp, "Up")
+window.onkeypress(paddleBDown, "Down")
 
 while True:
     window.update()
