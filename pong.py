@@ -50,4 +50,34 @@ pen.hideturtle()
 pen.goto(0,260)
 pen.write("Player One: 0 Player 2 : 0 ", align="center", font=("Courier", 24, "normal"))
 
+def paddleAUp():
+    y = paddleA.ycor()
+    y+=20
+    paddleA.sety(y)
+
+def paddleADown():
+    y = paddleA.ycor()
+    y -= 20
+    paddleA.sety(y)
+
+def paddleBUp():
+    y = paddleB.ycor()
+    y+=20
+    paddleB.sety(y)
+
+def paddleBDown():
+    y = paddleB.ycor()
+    y -= 20
+    paddleB.sety(y)
+
+
+# Keyboard bindings
+window.listen()
+window.onkeypress(paddleAUp, "w")
+
+while True:
+    window.update()
+    
+
+
 
