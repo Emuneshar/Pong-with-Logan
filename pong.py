@@ -5,7 +5,7 @@ window = turtle.Screen()
 window.title("Pong")
 window.bgcolor("black")
 window.setup(width=800, height=600)
-#window.tracer(0)
+window.tracer(0)
 
 # Score variables
 leftScore = 0
@@ -80,6 +80,12 @@ window.onkeypress(paddleBDown, "Down")
 
 while True:
     window.update()
+
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+
+
     
 
 
